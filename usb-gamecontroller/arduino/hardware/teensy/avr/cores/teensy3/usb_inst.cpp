@@ -69,8 +69,8 @@ uint8_t usb_joystick_class::manual_mode = 0;
 #endif
 
 #ifdef USB_ARCADE
-usb_arcade_class Arcade;
-uint8_t usb_arcade_class::auto_send = 0;
+UsbArcadeClass Arcade;
+uint8_t UsbArcadeClass::autoSend_ = 0;
 #endif
 
 #ifdef USB_DISABLED
