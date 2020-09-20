@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name w_conn_av)(type KiCad)(uri ${KIPRJMOD}/footprints/w_conn_av.pretty)(options "")(descr ""))
+  (lib (name w_conn_modu)(type Legacy)(uri ${KIPRJMOD}/footprints/w_conn_modu.mod)(options "")(descr ""))
+)
