@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rave_racer)(type Legacy)(uri ${KIPRJMOD}/symbols/rave_racer.lib)(options "")(descr ""))
+)

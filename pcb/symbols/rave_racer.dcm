@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SCART-F
+D Prise Peritel
+K connector
+F  ~
+$ENDCMP
+#
+#End Doc Library
