@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:SCART-F J2
-U 1 1 5DA8E851
-P 4625 2550
-F 0 "J2" H 4625 3970 50  0001 C CNN
-F 1 "SCART-F" H 4625 3879 50  0000 C CNN
-F 2 "w_conn_av:SCART" H 4625 2600 50  0001 C CNN
-F 3 " ~" H 4625 2600 50  0001 C CNN
-	1    4625 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 5DA9381F
 P 2225 2175
@@ -123,56 +112,52 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR03
 U 1 1 5DABD633
-P 5525 1450
-F 0 "#PWR03" H 5525 1300 50  0001 C CNN
-F 1 "+12V" H 5540 1623 50  0000 C CNN
-F 2 "" H 5525 1450 50  0001 C CNN
-F 3 "" H 5525 1450 50  0001 C CNN
-	1    5525 1450
+P 5775 1450
+F 0 "#PWR03" H 5775 1300 50  0001 C CNN
+F 1 "+12V" H 5790 1623 50  0000 C CNN
+F 2 "" H 5775 1450 50  0001 C CNN
+F 3 "" H 5775 1450 50  0001 C CNN
+	1    5775 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5DABDEDD
-P 5525 2300
-F 0 "R2" H 5595 2346 50  0000 L CNN
-F 1 "2k" V 5525 2250 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5455 2300 50  0001 C CNN
-F 3 "~" H 5525 2300 50  0001 C CNN
-	1    5525 2300
+P 5775 2300
+F 0 "R2" H 5845 2346 50  0000 L CNN
+F 1 "2k" V 5775 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5705 2300 50  0001 C CNN
+F 3 "~" H 5775 2300 50  0001 C CNN
+	1    5775 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5DABE676
-P 5525 1800
-F 0 "R1" H 5595 1846 50  0000 L CNN
-F 1 "10k" V 5525 1725 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5455 1800 50  0001 C CNN
-F 3 "~" H 5525 1800 50  0001 C CNN
-	1    5525 1800
+P 5775 1800
+F 0 "R1" H 5845 1846 50  0000 L CNN
+F 1 "10k" V 5775 1725 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5705 1800 50  0001 C CNN
+F 3 "~" H 5775 1800 50  0001 C CNN
+	1    5775 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5525 1450 5525 1650
+	5775 1950 5775 2050
 Wire Wire Line
-	5525 1950 5525 2050
+	5775 2450 5775 2650
+Connection ~ 5775 2050
 Wire Wire Line
-	5525 2450 5525 2650
-Wire Wire Line
-	5225 2050 5525 2050
-Connection ~ 5525 2050
-Wire Wire Line
-	5525 2050 5525 2150
+	5775 2050 5775 2150
 $Comp
 L power:GND #PWR04
 U 1 1 5DACB537
-P 5525 2650
-F 0 "#PWR04" H 5525 2400 50  0001 C CNN
-F 1 "GND" H 5530 2477 50  0000 C CNN
-F 2 "" H 5525 2650 50  0001 C CNN
-F 3 "" H 5525 2650 50  0001 C CNN
-	1    5525 2650
+P 5775 2650
+F 0 "#PWR04" H 5775 2400 50  0001 C CNN
+F 1 "GND" H 5780 2477 50  0000 C CNN
+F 2 "" H 5775 2650 50  0001 C CNN
+F 3 "" H 5775 2650 50  0001 C CNN
+	1    5775 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -247,17 +232,6 @@ $EndComp
 Wire Wire Line
 	7350 1725 7350 1450
 $Comp
-L Connector:DB15_Female_HighDensity J4
-U 1 1 5F636341
-P 9200 2175
-F 0 "J4" H 9200 3042 50  0001 C CNN
-F 1 "VGA-F" H 9200 2951 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 8250 2575 50  0001 C CNN
-F 3 " ~" H 8250 2575 50  0001 C CNN
-	1    9200 2175
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5F641AFA
 P 6550 2025
@@ -319,64 +293,6 @@ F 3 "" H 6825 2900 50  0001 C CNN
 	1    6825 2900
 	1    0    0    -1  
 $EndComp
-Text Label 8725 1775 2    50   ~ 0
-Red
-Text Label 8725 1975 2    50   ~ 0
-Green
-Text Label 8725 2175 2    50   ~ 0
-Blue
-Text Label 9700 2175 0    50   ~ 0
-CSYNC
-Wire Wire Line
-	8725 1775 8900 1775
-Wire Wire Line
-	8725 1975 8900 1975
-Wire Wire Line
-	8725 2175 8900 2175
-Wire Wire Line
-	9500 2175 9700 2175
-$Comp
-L power:GND #PWR0105
-U 1 1 5F6B3D81
-P 8325 2575
-F 0 "#PWR0105" H 8325 2325 50  0001 C CNN
-F 1 "GND" H 8330 2402 50  0000 C CNN
-F 2 "" H 8325 2575 50  0001 C CNN
-F 3 "" H 8325 2575 50  0001 C CNN
-	1    8325 2575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8325 2575 8900 2575
-Wire Wire Line
-	8900 1675 8325 1675
-Connection ~ 8325 2575
-Wire Wire Line
-	8900 1875 8325 1875
-Wire Wire Line
-	8325 1675 8325 1875
-Connection ~ 8325 1875
-Wire Wire Line
-	8325 1875 8325 2075
-Wire Wire Line
-	8900 2075 8325 2075
-Connection ~ 8325 2075
-Wire Wire Line
-	8325 2075 8325 2475
-Wire Wire Line
-	8900 2475 8325 2475
-Connection ~ 8325 2475
-Wire Wire Line
-	8325 2475 8325 2575
-NoConn ~ 9500 1775
-NoConn ~ 9500 1975
-NoConn ~ 9500 2575
-NoConn ~ 8900 2275
-NoConn ~ 8900 2375
-Text Label 9700 2375 0    50   ~ 0
-VSYNC
-Wire Wire Line
-	9500 2375 9700 2375
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5F6D9DF4
@@ -433,14 +349,178 @@ Connection ~ 725  1375
 Wire Wire Line
 	725  1375 725  1550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5F6EA10A
 P 725 1550
-F 0 "#PWR?" H 725 1300 50  0001 C CNN
+F 0 "#PWR0106" H 725 1300 50  0001 C CNN
 F 1 "GND" H 730 1377 50  0000 C CNN
 F 2 "" H 725 1550 50  0001 C CNN
 F 3 "" H 725 1550 50  0001 C CNN
 	1    725  1550
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5225 1650
+NoConn ~ 5225 3450
+NoConn ~ 5225 3050
+NoConn ~ 5225 2850
+NoConn ~ 5225 2650
+NoConn ~ 5225 2450
+NoConn ~ 4025 3350
+NoConn ~ 4025 3550
+Wire Wire Line
+	7850 2025 8450 2025
+Wire Wire Line
+	8650 2075 8450 2075
+NoConn ~ 9250 2075
+NoConn ~ 9250 1975
+NoConn ~ 8650 2275
+NoConn ~ 8650 1675
+NoConn ~ 8650 1475
+Wire Wire Line
+	9825 2175 9825 2275
+Connection ~ 9825 2175
+Wire Wire Line
+	9250 2175 9825 2175
+Wire Wire Line
+	9825 1775 9825 2175
+Connection ~ 9825 1775
+Wire Wire Line
+	9250 1775 9825 1775
+Wire Wire Line
+	9825 1575 9825 1775
+Connection ~ 9825 1575
+Wire Wire Line
+	9825 1375 9825 1575
+Wire Wire Line
+	9250 1575 9825 1575
+Connection ~ 9825 2275
+Wire Wire Line
+	9250 1375 9825 1375
+Wire Wire Line
+	9825 2275 9250 2275
+$Comp
+L power:GND #PWR0105
+U 1 1 5F6B3D81
+P 9825 2275
+F 0 "#PWR0105" H 9825 2025 50  0001 C CNN
+F 1 "GND" H 9830 2102 50  0000 C CNN
+F 2 "" H 9825 2275 50  0001 C CNN
+F 3 "" H 9825 2275 50  0001 C CNN
+	1    9825 2275
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9425 1875 9250 1875
+Wire Wire Line
+	9425 1675 9250 1675
+Wire Wire Line
+	9425 1475 9250 1475
+Text Label 9425 1875 0    50   ~ 0
+Blue
+Text Label 9425 1675 0    50   ~ 0
+Green
+Text Label 9425 1475 0    50   ~ 0
+Red
+$Comp
+L Connector:DB15_Female_HighDensity J4
+U 1 1 5F636341
+P 8950 1875
+F 0 "J4" H 8950 2742 50  0001 C CNN
+F 1 "VGA-F" H 8950 2651 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 8000 2275 50  0001 C CNN
+F 3 " ~" H 8000 2275 50  0001 C CNN
+	1    8950 1875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1925 8450 1925
+Wire Wire Line
+	8450 1875 8650 1875
+Wire Wire Line
+	8450 1875 8450 1925
+Wire Wire Line
+	8450 2075 8450 2025
+NoConn ~ 7850 2125
+NoConn ~ 7850 2225
+Wire Wire Line
+	5775 1450 5775 1650
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5F768EBE
+P 10425 1050
+F 0 "J5" H 10505 1042 50  0000 L CNN
+F 1 "Power Supply" H 10175 825 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 10425 1050 50  0001 C CNN
+F 3 "~" H 10425 1050 50  0001 C CNN
+	1    10425 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5F76C0BE
+P 10725 850
+F 0 "#PWR0107" H 10725 700 50  0001 C CNN
+F 1 "+12V" H 10740 1023 50  0000 C CNN
+F 2 "" H 10725 850 50  0001 C CNN
+F 3 "" H 10725 850 50  0001 C CNN
+	1    10725 850 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F76C83B
+P 10725 1150
+F 0 "#PWR0108" H 10725 900 50  0001 C CNN
+F 1 "GND" H 10730 977 50  0000 C CNN
+F 2 "" H 10725 1150 50  0001 C CNN
+F 3 "" H 10725 1150 50  0001 C CNN
+	1    10725 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10725 850  10725 950 
+Wire Wire Line
+	10725 950  10625 950 
+Wire Wire Line
+	10725 1150 10725 1050
+Wire Wire Line
+	10725 1050 10625 1050
+$Comp
+L rave_racer:SCART-F J2
+U 1 1 5F6F7F8E
+P 4625 2550
+F 0 "J2" H 4625 3970 50  0000 C CNN
+F 1 "SCART-F" H 4625 3879 50  0000 C CNN
+F 2 "" H 4625 2600 50  0001 C CNN
+F 3 " ~" H 4625 2600 50  0001 C CNN
+	1    4625 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F708FD6
+P 5525 3775
+F 0 "#PWR0109" H 5525 3525 50  0001 C CNN
+F 1 "GND" H 5530 3602 50  0000 C CNN
+F 2 "" H 5525 3775 50  0001 C CNN
+F 3 "" H 5525 3775 50  0001 C CNN
+	1    5525 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 3250 5525 3250
+Wire Wire Line
+	5525 3250 5525 3775
+Wire Wire Line
+	5225 2050 5775 2050
+Wire Wire Line
+	5225 2250 5525 2250
+Wire Wire Line
+	5525 2250 5525 3250
+Connection ~ 5525 3250
+Wire Wire Line
+	5225 1850 5525 1850
+Wire Wire Line
+	5525 1850 5525 2250
+Connection ~ 5525 2250
 $EndSCHEMATC
